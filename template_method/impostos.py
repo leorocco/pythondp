@@ -9,15 +9,15 @@ class ICMS(object):
         return orcameto.valor * 0.06
 
 class ICPP(object):
-    def calcula(sefl, orcamento):
-        if orcamento > 500:
+    def calcula(self, orcamento):
+        if orcamento.valor > 500:
             return orcamento.valor * 0.07
         else:
             return orcamento.valor * 0.05
 
-class IKCV(object)
+class IKCV(object):
     def calcula(self, orcamento):
-        if orcamento > 500 and self.__tem_item_maior_que_100_reais(orcamento):
+        if orcamento.valor > 500 and self.__tem_item_maior_que_100_reais(orcamento):
             return orcameto.valor * 0.1
         else:
             return orcameto.valor * 0.06
