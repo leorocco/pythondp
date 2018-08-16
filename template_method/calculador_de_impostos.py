@@ -2,7 +2,7 @@
 
 class Calculador_de_impostos(object):
 
-    def realiza_calcula(self, orcamento, imposto):
+    def realizar_calculo(self, orcamento, imposto):
         valor = imposto.calcula(orcamento)
         print valor
 
@@ -22,13 +22,13 @@ if __name__ == '__main__':
 
     calculador_de_impostos = Calculador_de_impostos()
     print 'ISS e ICMS'
-    calculador_de_impostos.realiza_calcula(orcamento, ISS())
-    calculador_de_impostos.realiza_calcula(orcamento, ICMS())
+    calculador_de_impostos.realizar_calculo(orcamento, ISS())
+    #calculador_de_impostos.realizar_calculo(orcamento, ICMS())
 
     # cálculo dos novos impostos
-    print 'ICPP e IKCV'
-    calculador_de_impostos.realiza_calculo(orcamento, ICPP()) # imprime 25.0
-    calculador_de_impostos.realiza_calculo(orcamento, IKCV()) # imprime 30.0
+    #print 'ICPP e IKCV'
+    #calculador_de_impostos.realizar_calculo(orcamento, ICPP()) # imprime 25.0
+    #calculador_de_impostos.realizar_calculo(orcamento, IKCV()) # imprime 30.0
 
     
 
