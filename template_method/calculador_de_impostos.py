@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     orcamento = Orcamento()
 
-    orcamento.adiciona_item(Item('ITEM 1', 100))
+    orcamento.adiciona_item(Item('ITEM 1', 50))
     orcamento.adiciona_item(Item('ITEM 2', 200))
     orcamento.adiciona_item(Item('ITEM 3', 250))
 
