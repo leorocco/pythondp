@@ -1,12 +1,11 @@
 # -*- coding: UTF-8 -*-
-
 class ISS(object):
-    def calcula(self, orcameto):
+    def calcula(self, orcamento):
         return orcamento.valor * 0.1
 
 class ICMS(object):
     def calcula(self, orcamento):
-        return orcameto.valor * 0.06
+        return orcamento.valor * 0.06
 
 class ICPP(object):
     def calcula(self, orcamento):
@@ -18,13 +17,12 @@ class ICPP(object):
 class IKCV(object):
     def calcula(self, orcamento):
         if orcamento.valor > 500 and self.__tem_item_maior_que_100_reais(orcamento):
-            return orcameto.valor * 0.1
+            return orcamento.valor * 0.1
         else:
-            return orcameto.valor * 0.06
-        
+            return orcamento.valor * 0.06
 
     def __tem_item_maior_que_100_reais(self, orcamento):
-        for item in orcameto.obter_itens():
+        for item in orcamento.obter_itens():
             if item.valor > 100:
                 return True
         return False
