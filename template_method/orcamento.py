@@ -12,7 +12,7 @@ class Orcamento(object):
         return total
 
     def obter_itens(self):
-        return tuple(self.itens)
+        return tuple(self.__itens)
 
     @property
     def total_itens(self):
