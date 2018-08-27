@@ -27,11 +27,7 @@ if __name__ == '__main__':
     calculador_de_impostos.realiza_calculo(orcamento, ISS())
     calculador_de_impostos.realiza_calculo(orcamento, ICMS())
 
-
     # cálculo dos novos impostos
-    #print 'ICPP e IKCV'
-    #calculador_de_impostos.realizar_calculo(orcamento, ICPP()) # imprime 25.0
-    #calculador_de_impostos.realizar_calculo(orcamento, IKCV()) # imprime 30.0
-
-    
-
+    print 'ICPP e IKCV'
+    calculador_de_impostos.realiza_calculo(orcamento, ICPP()) # imprime 25.0
+    calculador_de_impostos.realiza_calculo(orcamento, IKCV()) # imprime 30.0
